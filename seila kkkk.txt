@@ -1,0 +1,11 @@
+iniciar o composer no projeto na raiz comando => composer init
+ quando abrir dar um composer update
+
+isso no composer.json
+//gerar um autoload para o projeto
+    "autoload": {
+                // o nome do namespace
+        "psr-4": {"Html\\": "html/"}
+    }
+
+add usando composer o slim para trabalhar com rotas => composer require slim/slim "^3.12"

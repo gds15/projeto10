@@ -1,0 +1,18 @@
+{
+    "name": "gugad/projeto10",
+    "description": "projeto gustavo roani vinicius",
+    "type": "project",
+    "authors": [
+        {
+            "name": "gds15",
+            "email": "gugadellatorre@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "^3.12"
+    }, 
+    "autoload": {
+        "psr-4": {"Html\\": "html/"}
+    }
+}

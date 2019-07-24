@@ -6,6 +6,7 @@ namespace Html\Models;
 use Config\Db;
 
 class Model {
+    //trazer todos registros
   static public function all() {
     $obj = new static;
     $conn = Db::conexao();
@@ -15,6 +16,7 @@ class Model {
     return $compras;
   }
 
+  //trazer um registro por id
   static public function find(int $id) {
     $obj = new static;
     $conn = Db::conexao();
@@ -29,6 +31,7 @@ class Model {
     return $obj;
   }
 
+  //salvar
   public function save() {
     $atributos = get_object_vars($this);
     unset($atributos['table']);
@@ -96,6 +99,7 @@ class Model {
 
   }
 
+  //apagar
   public function delete() {
     $conn = Db::conexao();
     $delete = "DELETE FROM `".$this->table."` WHERE `".$this->primary_key."`=:id;";

@@ -11,7 +11,7 @@ use Html\Controllers\TesteController;
 
 
 
-$app = new Html([
+$app = new App([
 
     'settings' => [
         'displayErrorDetails' => true,

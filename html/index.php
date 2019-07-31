@@ -16,7 +16,7 @@ $app = new App([
     'settings' => [
         'displayErrorDetails' => true,
         'debug'               => true,
-        
+
     ]
 
 ]);

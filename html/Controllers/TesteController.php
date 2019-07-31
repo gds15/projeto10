@@ -21,4 +21,9 @@ class testeController extends Controlle {
     return $this->view('teste/index',$response);
   }
 
+  public function detalhe(ServerRequestInterface $request, ResponseInterface $response) {
+
+    return $this->view('teste/nada',$response);
+  }
+
 }

@@ -22,5 +22,6 @@ $app = new App([
 ]);
 
 $app->get('/', TesteController::class . ':index');
+$app->get('/nada', TesteController::class . ':detalhe');
 
 $app->run();
